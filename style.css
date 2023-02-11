@@ -1,102 +1,281 @@
-body {
-  font-family: Arial;
-  margin: 0;
-  padding: 0;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@100;300&display=swap');
+
+
+*{
+    margin: 0; /* margenes externos */
+    padding: 0;   /* margenes internos */
+    box-sizing:  border-box;   /* mantiene el tamaño del box*/
 }
 
-header {
-  background-color: #001d3d;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
-  font-family: 'Montserrat';
+/* el asterisco selecciona todos los elementos y aplica los estilos en ellos */
+
+body{
+    font-family: 'lato', sans-serif;
+    
 }
 
-header h1 {
-  margin: 0;
-  margin-left: 100px;
+header{
+    background-color: #fff;
+    font-family: 'Poppins';
+    padding: 10px 50px;  /*primera medida altura, segunda medida anchura*/
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-header nav ul {
-  list-style: none;
-  margin: 0;
-  display: flex;
+nav li {
+    margin: 0 10px;
 }
 
-header nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 20px;
+nav a {
+    color: black;
+    text-decoration: none;
 }
 
-main {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #0172B6;
+    color: #fff;
 }
 
-section h2 {
-  margin-top: 0;
+#hero-right {
+    width: 60%;
+    text-align: justify;
+}
+#hero-left {
+    width: 25%;
+    border-radius: 100%;
+    border: 5px solid white;
+    
 }
 
-#portafolio ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
+#hero-right h2{
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+} 
 
-#portafolio li {
-  width: 33.33%;
-  padding: 20px;
-  box-sizing: border-box;
-}
+/* main{
+    text-decoration: none;
+} */
 
-form div {
-  margin-bottom: 20px;
-}
-
-form label,
-form input,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-form button[type="submit"] {
-  background-color: #0772B6;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-footer {
-  background-color: #001d3d;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-.image{ 
-  cursor: pointer; 
-  position: relative; 
-  top: 0; 
-  left: 20%; 
-  height: 100px; 
-  width: 100px;
-  margin-left: -200px; 
-  margin-top: 0;
-  margin-right: 100px;  
-  border-radius: 50%; 
-  border-color: #fff; 
-  border-width: 5px; 
-  border-style: solid; 
-  /* filter: grayscale(100%);  */
+/* experiencia */
+#experiencia {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+  }
   
-}
+  #experiencia h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  
+  #experiencia ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #experiencia li {
+    margin-bottom: 20px;
+  }
+  
+  #experiencia h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #experiencia p {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  #experiencia ul ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+
+
+/* habilidades */
+
+#habilidades {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  #habilidades h2 {
+    margin-bottom: 30px;
+    /* font-size: 36px; */
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+  }
+  
+  #habilidades ul {
+    margin: 0;
+    padding: 20px 200px;
+    /* list-style: none; */
+    display: inline-block;
+  }
+  
+  #habilidades li {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+
+  #educacion {
+    padding: 20px;
+    background-color: #D0D0D6;
+    text-align: center;
+  }
+  
+  #educacion h2 {
+    margin-bottom: 30px;
+    /* font-size: 36px; */
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    
+  }
+  
+  #educacion ul {
+    margin: 0;
+    padding: 20px 200px;
+    list-style: none;
+    display: inline-block;
+    
+  }
+  
+  #educacion li {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  /* portafolio */
+  #portafolio {
+    /* display: flex; */
+    justify-content: space-evenly;
+    /* align-items: center;  */
+
+    background-color: #D0D0D6;
+    padding: 40px;
+    text-align: center;
+    
+  }
+  
+  #portafolio h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  #portafolio ul {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+    margin: 0;
+    /* padding: 20px 2px; */
+  }
+  
+ #portafolio ul li {
+    margin: 0 5px;
+  } 
+  
+  #portafolio ul a {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+  }
+  
+  #portafolio ul a img {
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+
+/* redes */
+
+
+/*   #redes li img{
+    display: flex;
+    width: 5%;
+    justify-content: center;
+    margin-top: 60px;
+  } */
+
+
+  #redes {
+    /* display: flex; */
+    justify-content: space-evenly;
+    /* align-items: center;  */
+
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    
+  }
+  
+  #redes h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  #redes ul {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+    margin: 0;
+    padding: 20px 2px;
+  }
+  
+ #redes ul li {
+    margin: 0 50px;
+  } 
+  
+  #redes ul a {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+  }
+  
+  #redes ul a img {
+    display: flex;
+    width: 75px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
