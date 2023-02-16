@@ -52,12 +52,13 @@ nav a {
 }
 
 #hero-right {
-    width: 60%;
+    width: calc(100% - 100px);  /*realiza un calculo para ajustar el tamaño con base a un tamaño ya existente */
     text-align: justify;
 }
 #hero-left {
-    width: 25%;
+    width: 200px;
     border-radius: 100%;
+    margin-right: 30px;
     border: 5px solid white;
     
 }
