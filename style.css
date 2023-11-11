@@ -178,6 +178,29 @@ nav a {
   }
 
   /* portafolio */
+  #portafolio-right {
+    width: calc(100% - 100px);  /*realiza un calculo para ajustar el tamaño con base a un tamaño ya existente */
+    text-align: justify;
+    color: #252525;
+    
+  }
+  #portafolio-left {
+      width: 800px;
+      border-radius: 2%;
+      margin-right: 30px;
+      
+      
+      
+  }
+
+  #portafolio-right h2{
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      color: #252525;
+  } 
+
+
+
   #portafolio {
     /* display: flex; */
     justify-content: space-evenly;
@@ -186,7 +209,7 @@ nav a {
     background-color: #D0D0D6;
     padding: 40px;
     text-align: center;
-    
+    color: #252525;
   }
   
   #portafolio h2 {
@@ -198,10 +221,11 @@ nav a {
   #portafolio ul {
     display: flex; 
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center-left;
     align-items: center; 
     list-style: none;
     margin: 0;
+    
     /* padding: 20px 2px; */
   }
   
@@ -279,4 +303,3 @@ nav a {
     justify-content: center;
     margin-top: 10px;
   }
-  
