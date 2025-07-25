@@ -35,7 +35,7 @@
                 <h1>Hello, I'm <span class="highlight">Cristian</span> – WordPress Web Designer</h1>
                 <p class="hero-subtitle">I help entrepreneurs and businesses create professional, optimized websites.</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn-primary">Contact Me</a>
+                    <a href="mailto:camezquita91@gmail.com" class="btn-primary">Contact Me</a>
                     <a href="#projects" class="btn-secondary">View Projects</a>
                 </div>
             </div>
@@ -113,8 +113,8 @@
                         <i class="fas fa-laptop-code"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Project Coming Soon</h3>
-                        <p>Exciting projects will be showcased here soon. Stay tuned for updates!</p>
+                        <h3>CatholicSoft</h3>
+                        <p>Informational website for a software development company focused on Catholic parishes.</p>
                     </div>
                 </div>
                 <div class="project-card">
@@ -122,8 +122,8 @@
                         <i class="fas fa-mobile-alt"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Project Coming Soon</h3>
-                        <p>More amazing projects will be displayed here in the near future.</p>
+                        <h3>Lenguaje Web</h3>
+                        <p>Creation of an informational website for Lenguaje Web, a personal agency I founded to offer simple and accessible web design services in Guatemala, especially for entrepreneurs looking to establish an online presence without technical complications.</p>
                     </div>
                 </div>
                 <div class="project-card">
@@ -131,8 +131,8 @@
                         <i class="fas fa-store"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Project Coming Soon</h3>
-                        <p>Check back later to see the latest work and case studies.</p>
+                        <h3>Under His True Light</h3>
+                        <p>Complete redesign of the informational website for the Christian ministry “Under His True Light” led by Zanna Noé. The project focused on improving the structure, usability, and visual appeal of the site, as well as making educational content more accessible for parents, preteens, and teenagers.</p>
                     </div>
                 </div>
             </div>
@@ -146,7 +146,7 @@
                     <p>&copy; 2025 Cristian Amézquita.</p>
                 </div>
                 <div class="footer-right">
-                    <a href="www.linkedin.com/in/cristian-amezquita-tech" class="social-link">
+                    <a href="https://www.linkedin.com/in/cristian-amezquita-tech" class="social-link">
                         <i class="fab fa-linkedin"></i>
                         LinkedIn
                     </a>
@@ -181,8 +181,15 @@
                 navMenu.classList.remove('active');
             });
         });
-
-
+// Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+ });
     </script>
 </body>
 </html>
