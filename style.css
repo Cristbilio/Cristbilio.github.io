@@ -463,6 +463,14 @@ section {
     color: var(--white);
 }
 
+.project-image img {
+    width: 100%;             /* Ocupa todo el ancho disponible */
+    height: 100%;            /* Se ajusta a la altura del contenedor */
+    object-fit: cover;       /* Recorta si excede, manteniendo proporciones */
+    border-radius: 0;        /* Ajusta si quieres esquinas redondeadas */
+}
+
+
 .project-content {
     padding: 1.5rem;
 }
