@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars(strip_tags(trim($_POST["message"])));
 
     // Tu dirección de correo a donde quieres que lleguen los mensajes
-    $to = "camezquita91@gmail.com"; // <-- ¡CAMBIA ESTO A TU CORREO ELECTRÓNICO!
+    $to = "camezquita91@gmail.com"; // ¡Esta dirección es correcta!
     $subject = "Nuevo mensaje del formulario web de " . $name;
     $headers = "From: " . $name . " <" . $email . ">\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
@@ -19,16 +19,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Envía el correo
     if (mail($to, $subject, $email_content, $headers)) {
-        // Éxito: puedes redirigir a una página de agradecimiento o mostrar un mensaje
-        // header("Location: thank_you.html"); // Por ejemplo, a una página llamada thank_you.html
-        // exit;
-        echo "<p style='text-align: center; color: green; font-size: 1.2em;'>¡Gracias! Tu mensaje ha sido enviado.</p>";
+        // Éxito: Redirige al usuario a la página principal o a una de agradecimiento
+        // Esto es crucial para evitar que el usuario se quede en la página PHP
+        header("Location: index.html?status=success");
+        exit;
     } else {
-        // Error al enviar el correo
-        echo "<p style='text-align: center; color: red; font-size: 1.2em;'>Lo siento, hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.</p>";
+        // Error: Redirige al usuario a la página principal con un mensaje de error
+        header("Location: index.html?status=error");
+        exit;
     }
 } else {
     // Si alguien intenta acceder directamente a este archivo sin enviar el formulario
-    echo "<p style='text-align: center; color: red; font-size: 1.2em;'>Acceso no permitido.</p>";
+    header("Location: index.html?status=no_access");
+    exit;
 }
 ?>
