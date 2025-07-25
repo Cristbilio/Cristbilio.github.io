@@ -43,12 +43,12 @@ body {
     transition: var(--transition);
     border-bottom: 1px solid rgba(1, 114, 182, 0.1);
 }
-/*
+
 .header.scrolled {
     background: rgba(255, 255, 255, 0.98);
     box-shadow: var(--shadow);
 }
-*/
+
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -251,7 +251,7 @@ body {
     object-fit: cover;
     border: 6px solid var(--primary-color);
     box-shadow: var(--shadow-lg);
-    animation: float 6s ease-in-out infinite;
+    animation: float 0s ease-in-out infinite;
     display: block;
 }
 
