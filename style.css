@@ -268,7 +268,7 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: var(--shadow-lg);
-    animation: float 6s ease-in-out infinite;
+    /* animation: float 6s ease-in-out infinite;*/
 }
 
 /* Si la imagen no carga, mostrar el placeholder */
