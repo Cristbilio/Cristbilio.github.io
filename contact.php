@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars(strip_tags(trim($_POST["message"])));
 
     // Tu dirección de correo a donde quieres que lleguen los mensajes
-    $to = "tucorreo@ejemplo.com"; // <-- ¡CAMBIA ESTO A TU CORREO ELECTRÓNICO!
+    $to = "camezquita91@gmail.com"; // <-- ¡CAMBIA ESTO A TU CORREO ELECTRÓNICO!
     $subject = "Nuevo mensaje del formulario web de " . $name;
     $headers = "From: " . $name . " <" . $email . ">\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
