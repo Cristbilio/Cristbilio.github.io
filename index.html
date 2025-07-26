@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+FileName: /index.html
+FileContents: <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +19,8 @@
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="mailto:camezquita91@gmail.com" class="contact-btn">Contact Me</a></li>
+                    <!-- Cambiar el botón de contacto para que apunte a la nueva sección de contacto -->
+                    <li><a href="#contact" class="contact-btn">Contact Me</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -35,7 +37,8 @@
                 <h1>Hello, I'm <span class="highlight">Cristian</span> – WordPress Web Designer</h1>
                 <p class="hero-subtitle">I help entrepreneurs and businesses create professional, optimized websites.</p>
                 <div class="hero-buttons">
-                    <a href="mailto:camezquita91@gmail.com" class="btn-primary">Contact Me</a>
+                    <!-- Cambiar el botón de contacto para que apunte a la nueva sección de contacto -->
+                    <a href="#contact" class="btn-primary">Contact Me</a>
                     <a href="#projects" class="btn-secondary">View Projects</a>
                 </div>
             </div>
@@ -56,7 +59,7 @@
                     
                     <p>With experience in <strong>digitalization and document organization</strong>, along with solid knowledge in <strong>project management</strong>, I blend design, strategy, and technology to deliver solutions that not only look great but also work efficiently.</p>
                     
-                    <p>I work with tools like <strong>Elementor, WooCommerce, and No-Code solutions</strong>, ensuring that each project is <strong>customizable and scalable</strong> according to the client's needs.</p>
+                    <p>I work with tools like <strong>Elementor and No-Code solutions</strong>, ensuring that each project is <strong>customizable and scalable</strong> according to the client's needs.</p>
                     
                     <p>If you're looking for a professional website that reflects your identity and boosts your business, <strong>let's talk</strong>.</p>
                 </div>
@@ -146,6 +149,45 @@
   </div>
 </section>
 
+    <!-- Nueva Sección de Contacto con Formspree -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's build something great together!</h3>
+                    <p>Have a project in mind or just want to say hello? Fill out the form or reach out directly.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+    <i class="fas fa-envelope"></i>
+    <a href="mailto:camezquita91@gmail.com">Send an Email</a>
+</div>
+<div class="contact-method">
+    <i class="fab fa-whatsapp"></i>
+    <a href="https://wa.link/22lzbz" target="_blank">Send us a message on WhatsApp</a>
+</div>
+                        <!-- Puedes añadir más métodos de contacto aquí si lo deseas -->
+                    </div>
+                </div>
+                <div class="form-container">
+                    <!-- Formulario de Formspree -->
+                    <form action="https://formspree.io/f/movldyge" method="POST">
+                        <label for="email">Your email:</label>
+                        <input type="email" name="email" id="email" class="form-input" placeholder="your.email@example.com" required>
+                        
+                        <label for="message">Your message:</label>
+                        <textarea name="message" id="message" class="form-textarea" placeholder="Type your message here..." required></textarea>
+                        
+                        <!-- Puedes añadir otros campos si los necesitas, por ejemplo, un campo de nombre -->
+                        <!-- <label for="name">Your Name:</label>
+                        <input type="text" name="name" id="name" class="form-input" placeholder="Your Name"> -->
+
+                        <button type="submit" class="btn-primary form-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
