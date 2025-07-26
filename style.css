@@ -443,6 +443,7 @@ section {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    text-decoration: none !important; /* Elimina el subrayado */
 }
 
 .project-card:hover {
