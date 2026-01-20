@@ -2,6 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+      <script>
+        const lang = navigator.language || navigator.userLanguage;
+        if (lang.startsWith("en")) {
+          window.location.href = "/en/";
+        } else {
+          window.location.href = "/es/";
+        }
+      </script>
+    <!--<meta charset="UTF-8">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristian Amézquita - WordPress Web Designer</title>
     <link rel="stylesheet" href="style.css">
